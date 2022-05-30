@@ -12,4 +12,3 @@ terraform.tfstate
 .terraform/
 .history/
 terraform.tfstate.backup
-token.env
