@@ -41,7 +41,6 @@ resource "hcloud_server" "k8s-master" {
     ip         = "192.168.0.5"
   }
 
-  # copy over systemd unit
   provisioner "file" {
     connection {
       host        = self.ipv4_address
@@ -79,7 +78,6 @@ resource "hcloud_server" "k8s-worker" {
     ip         = "192.168.0.6"
   }
 
-  # copy over systemd unit
   provisioner "file" {
     connection {
       host        = self.ipv4_address
