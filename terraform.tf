@@ -9,7 +9,7 @@ terraform {
 
 
 provider "hcloud" {
-  token = file("token_id")
+  token = file("token.env")
 }
 
 resource "hcloud_ssh_key" "default" {
