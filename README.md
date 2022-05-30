@@ -12,6 +12,8 @@ Ex:.
 8J4eJHgWTebFBubgwccxrnayWWsyd3SgRk2UFmb355GfEgrfgbHP11tV56EyFPFz
 ```
 
+exec the command: 
+```
 terraform init
 terraform apply -auto-approve
-
+```

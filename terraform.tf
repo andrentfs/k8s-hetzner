@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+
 provider "hcloud" {
   token = file("token_id")
 }
@@ -95,7 +96,6 @@ resource "hcloud_server" "k8s-worker" {
       host        = self.ipv4_address
       type        = "ssh"
       private_key = file("id_rsa")
-      #   timeout     = "30s"
     }
     inline = [
       "chmod +x /root/install_worker.sh",
